@@ -1,0 +1,13 @@
+{
+  "prettier.eslintIntegration": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+  "editor.detectIndentation": false,
+"cSpell.words": [
+    "classtimes",
+    "crashlytics",
+    "senati",
+    "sinfo"
+],
+"emmet.triggerExpansionOnTab": true
+}

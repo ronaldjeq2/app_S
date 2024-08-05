@@ -1,0 +1,11 @@
+#ModalSendMessage.ui.modal > .image.content {
+  display: block;
+}
+#ModalSendMessage.ui.modal > .actions {
+  text-align: center;
+  border: none;
+  background-color: #ffffff;
+}
+#ModalSendMessage {
+  min-width: 320px;
+}

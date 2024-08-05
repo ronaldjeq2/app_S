@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "339359347681",
+    "firebase_url": "https://senati-app.firebaseio.com",
+    "project_id": "senati-app",
+    "storage_bucket": "senati-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339359347681:android:0b36fece62da437d",
+        "android_client_info": {
+          "package_name": "edu.senati.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "339359347681-vium5gok90ujagkaniqnuem0cgmfrjmh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.senati.app",
+            "certificate_hash": "fd97bc1e37cfc111f15ea808e1ac2f6772737d6e"
+          }
+        },
+        {
+          "client_id": "339359347681-2kf4f6s6be07hqnev6hmop702ctqsaqm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCttTp6Aqwvg2FIlk8FCR2YOdnK1h-yTC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "339359347681-2kf4f6s6be07hqnev6hmop702ctqsaqm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "339359347681-tq6i2fv86dmd588p6s9h9he048uspt46.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "edu.senati.iosapp",
+                "app_store_id": "1358336389"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

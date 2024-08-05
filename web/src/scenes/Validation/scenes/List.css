@@ -1,0 +1,7 @@
+@media only screen and (min-width: 767px) {
+  div#listElements.ui.segment {
+    border: 3px solid #2a72f0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+}

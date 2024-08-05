@@ -1,0 +1,27 @@
+{
+  "name": "senati-app",
+  "version": "1.6.0",
+  "description": "Aplicacion movil de SENATI",
+  "main": "api/server.js",
+  "scripts": {
+    "start": "npm run api",
+    "api": "cd api && yarn && nodemon server.js",
+    "android": "cd app && yarn && node node_modules/react-native/local-cli/cli.js run-android",
+    "android-release": "cd app && yarn && cd android && ./gradlew assembleRelease",
+    "android-install-release": "cd app && yarn && cd android && ./gradlew installRelease",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/senati/senati-movil.git"
+  },
+  "keywords": [
+    "SENATI"
+  ],
+  "author": "faridescate@gmail.com",
+  "license": "",
+  "bugs": {
+    "url": "https://gitlab.com/senati/senati-movil/issues"
+  },
+  "homepage": "https://gitlab.com/senati/senati-movil#README"
+}

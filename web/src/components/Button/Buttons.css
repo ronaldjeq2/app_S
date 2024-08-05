@@ -1,0 +1,8 @@
+.ui.blue.button.validateButtonText {
+  min-width: 110px;
+}
+@media only screen and (max-width: 767px) {
+  .ui.button.validateButtonText {
+    min-width: 80px;
+  }
+}

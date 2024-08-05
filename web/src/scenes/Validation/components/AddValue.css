@@ -1,0 +1,18 @@
+div#addItem.ui.grid.addItemContainer {
+  margin-left: 100px;
+}
+#addItem .button.ui.fluid.button.Button_AddItem {
+  width: 150px;
+}
+@media only screen and (max-width: 768px) {
+  div#addItem.ui.grid.addItemContainer {
+    margin-left: 0px;
+  }
+  #addItem.span.textDropInfo {
+    margin-bottom: 20px;
+  }
+  #addItem .button.ui.fluid.button.Button_AddItem {
+    width: 100px;
+    font-size: 12px;
+  }
+}

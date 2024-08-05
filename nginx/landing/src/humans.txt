@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology COLOPHON
+
+# TEAM
+
+    <name> -- <role> -- <twitter>
+    Farid Escate -- Full Stack Developer -- @ivanir
+
+# THANKS
+
+    To myself
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css

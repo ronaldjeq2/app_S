@@ -1,0 +1,32 @@
+{
+    "listVersion": {
+        "1.6.2": {
+            "forceUpdate": false,
+            "sugestUpdate": false
+        },
+        "1.7.0": {
+            "forceUpdate": false,
+            "sugestUpdate": false
+        },
+        "1.7.1": {
+            "forceUpdate": false,
+            "sugestUpdate": false
+        },
+        "1.7.3": {
+            "forceUpdate": false,
+            "sugestUpdate": false
+        },
+        "1.8.0": {
+            "forceUpdate": false,
+            "sugestUpdate": false
+        },
+        "1.8.2": {
+            "forceUpdate": false,
+            "sugestUpdate": false
+        },
+        "1.9.0": {
+            "forceUpdate": false,
+            "sugestUpdate": false
+        }
+    }
+}

@@ -1,0 +1,85 @@
+version: "3"
+services:
+  nginx:
+    build: ./nginx
+    ports:
+      - "3000:80"
+      - "3001:443"
+    restart: always
+    depends_on:
+      - redis
+      - server1
+      - server2
+      - server3
+      - server5
+      - imageproxy
+    command: /bin/bash -c "nginx -g 'daemon off;'"
+
+  webapp:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "8000:80"
+    depends_on:
+      - redis
+      - server1
+      - server2
+      - server3
+      - server4
+      - server5
+
+  server1:
+    build: ./api
+    env_file: ./api/.env.prod
+    restart: always
+    ports:
+      - "3011:80"
+    depends_on:
+      - redis
+
+  server2:
+    build: ./api
+    env_file: ./api/.env.prod
+    restart: always
+    ports:
+      - "3012:80"
+    depends_on:
+      - redis
+
+  server3:
+    build: ./api
+    env_file: ./api/.env.prod
+    restart: always
+    ports:
+      - "3013:80"
+    depends_on:
+      - redis
+
+  server4:
+    build: ./api
+    env_file: ./api/.env.prod
+    restart: always
+    ports:
+      - "3014:80"
+    depends_on:
+      - redis
+
+  server5:
+    build: ./api
+    env_file: ./api/.env.prod
+    restart: always
+    ports:
+      - "3015:80"
+    depends_on:
+      - redis
+
+  redis:
+    image: redis
+    restart: always
+
+  imageproxy:
+    image: willnorris/imageproxy:v0.7.0
+    restart: always
+    command: -addr 0.0.0.0:80 -cache memory -whitelist www.senati.edu.pe

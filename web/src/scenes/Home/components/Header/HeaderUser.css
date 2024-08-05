@@ -1,0 +1,30 @@
+#HeaderUser {
+  font-size: 1.2rem;
+  margin: 0px;
+}
+
+#HeaderUser .content span {
+  max-width: calc(100vw - 600px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#HeaderUser .icons {
+  padding: 0px 10px;
+}
+
+#HeaderUser .content {
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 767px) {
+  #HeaderUser {
+    padding: 10px 0px;
+  }
+
+  #HeaderUser .content span {
+    max-width: calc(100vw - 120px);
+  }
+}

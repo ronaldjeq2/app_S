@@ -1,0 +1,6 @@
+#ListWithRightButtons p.itemText {
+  text-decoration-line: underline;
+  font-weight: bold;
+  word-wrap: break-word;
+  margin-bottom: 0px;
+}

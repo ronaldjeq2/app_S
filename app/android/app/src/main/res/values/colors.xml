@@ -1,0 +1,8 @@
+<resources>
+    <color name="windowBackgroundColor">#274187</color>
+    <color name="statusBarColor">#152247</color>
+    <color name="blue">#274187</color>
+    <color name="darkBlue">#152247</color>
+    <!-- required by splash screen package -->
+    <color name="primary_dark">#274187</color>
+</resources>

@@ -1,0 +1,63 @@
+{
+    "name": "senati_app_server",
+    "version": "1.12.6",
+    "description": "server for the senati app mobile",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon server.js ",
+        "test": "lab -m 3000 -r json -C -I 'Reflect,core,__makeTemplateObject,__importStar,__importDefault,__asyncGenerator,__asyncDelegator,__asyncValues,__core-js_shared__,__read,__spread,__await,__values,__assign,__extends,__rest,__decorate,__param,__metadata,__awaiter,__generator,__exportStar,regeneratorRuntime,"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@gitlab.com/senati/senati_app_server.git"
+    },
+    "keywords": [
+        "senati",
+        "app",
+        "server"
+    ],
+    "author": "Farid Escate",
+    "license": "",
+    "bugs": {
+        "url": "https://gitlab.com/faridescate/senati_app_server/issues"
+    },
+    "homepage": "https://gitlab.com/faridescate/senati_app_server#README",
+    "dependencies": {
+        "aguid": "^2.0.0",
+        "axios": "^0.19.0",
+        "boom": "^7.2.0",
+        "cheerio": "^1.0.0-rc.2",
+        "crypto-js": "^3.1.9-1",
+        "date-fns": "^1.29.0",
+        "dotenv": "^4.0.0",
+        "glob": "^7.1.4",
+        "good": "8.1.1",
+        "good-console": "^6.4.1",
+        "good-file": "^6.0.1",
+        "good-formatters": "^0.1.7",
+        "good-squeeze": "^5.0.2",
+        "hapi": "17.0.0",
+        "hapi-auth-jwt2": "^8.3.0",
+        "hapi-mongodb": "^9.0.0",
+        "hapi-swagger": "9.3.0",
+        "hoek": "5.0.2",
+        "inert": "5.0.1",
+        "javascript-obfuscator": "^0.16.0",
+        "joi": "13.1.2",
+        "joi-date-extensions": "^1.2.0",
+        "lodash": "^4.17.4",
+        "mailchecker": "^3.2.17",
+        "mailgun-js": "^0.22.0",
+        "oracledb": "^3.1.2",
+        "path": "^0.12.7",
+        "probe-image-size": "^3.2.0",
+        "redis": "^2.8.0",
+        "request": "^2.83.0",
+        "request-promise": "^4.2.2",
+        "vision": "5.4.3"
+    },
+    "devDependencies": {
+        "code": "^5.2.4",
+        "lab": "^18.0.2"
+    }
+}

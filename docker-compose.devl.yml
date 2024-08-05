@@ -1,0 +1,85 @@
+version: "3" 
+services: 
+ 
+    nginx: 
+        image: nginx:1.13.8 
+        volumes: 
+        - ./nginx/conf/ssl-default.conf:/etc/nginx/conf.d/default.conf 
+        - ./nginx/conf/nginx.conf:/etc/nginx/nginx.conf 
+        - ./nginx/conf/.htpasswd:/etc/nginx/.htpasswd 
+
+        - ./web/landing/src:/usr/share/nginx/html 
+
+        - ./nginx/private/app_senati_edu_pe.key:/opt/senati_edu_pe.key 
+        - ./nginx/certs/senati_edu_pe.pem:/opt/senati_edu_pe.pem 
+        - ./nginx/certs/DigiCertCA.crt:/opt/DigiCertCA.crt 
+        - ./nginx/certs/dhparam.pem:/opt/dhparam.pem 
+        ports: 
+        - "3000:80" 
+        - "3001:443" 
+        restart: always 
+        depends_on: 
+            - redis 
+            - server1 
+            - server2
+            - server3
+            - server4 
+            - imageproxy 
+        command: /bin/bash -c "nginx -g 'daemon off;'" 
+   
+    webapp:
+        build:
+            context: ./web
+            dockerfile: Dockerfile
+        restart: always
+        ports:
+        - "8000:80"
+        depends_on:
+            - redis
+            - server1
+            - server2
+            - server3
+            - server4
+ 
+    server1: 
+        image: registry.gitlab.com/senati/senati-movil/api:v1.5.1-deprecated
+        env_file: ./api/.env.devl
+        restart: always 
+        ports:
+         - "4011:80"
+        depends_on: 
+            - redis 
+    server2: 
+        image: registry.gitlab.com/senati/senati-movil/api:v1.5.1-deprecated
+        env_file: ./api/.env.devl 
+        restart: always
+        ports:
+        - "4012:80"
+        depends_on: 
+            - redis 
+    server3: 
+        build: ./api
+        env_file: ./api/.env.devl 
+        restart: always
+        ports:
+        - "4013:80"
+        depends_on: 
+            - redis 
+    server4: 
+        build: ./api
+        env_file: ./api/.env.devl
+        restart: always
+        ports:
+        - "4014:80"
+        depends_on: 
+            - redis 
+ 
+    redis:
+        image: redis
+        restart: always
+     
+    imageproxy: 
+        image: willnorris/imageproxy:v0.7.0 
+        restart: always
+        command: -addr 0.0.0.0:80 -cache memory -whitelist www.senati.edu.pe 
+

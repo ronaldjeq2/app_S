@@ -1,0 +1,40 @@
+{
+  "name": "app-web",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://app.senati.edu.pe/web",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "^16.6.3",
+    "react-app-polyfill": "^0.2.1",
+    "react-dom": "^16.6.3",
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.1",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^5.10.0",
+    "redux-saga": "^0.16.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.83.0",
+    "sweetalert2": "^8.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 9",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "redux-devtools-extension": "^2.13.7"
+  }
+}

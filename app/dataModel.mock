@@ -1,0 +1,63 @@
+{
+  app: {
+    version: "1.5.1",
+    versionNumber: 131,
+  },
+  network: {
+    connected: false,
+    hasCheckedStatus: false,
+  },
+  user: {
+    id: <String(9)>,
+    pid: <Number>,
+    token: <String>,
+    types: [ <String> ], #student, worker, anonymus
+    info:{
+      numDoc: <String>,
+      docType: <String>, #DNI/CE
+      firstName: <String>,
+      middleName: <String>,
+      birthDate: <Date>,
+      addressList: [
+        city: <String>,
+        statCode: <String>,
+        zipCode: <String>,
+        countryCode: <String>,
+        type: <String>,
+      ],
+      emailList: [
+        {
+
+        }
+      ]
+    }
+  },
+  sinfo:  {
+    code: ''
+    uri:
+  },
+  /**** Student related data ***/
+  student: {
+    program: <String>,
+    career: <String>,
+
+    /**** Horarios ****/
+    timetable: [
+
+    ],
+    courses: [
+
+    ]
+  },
+  /*
+    vamos a cambiar la seccion de noticias
+    ahora solo usaremos un webview para mostrarlas
+    ya que la version mobil se ve razonablemente bien.
+    de ser posible añadir un footer en los webview
+    con opciones para abrirla en el explorador
+    como tiene twitter y facebook
+  */
+  news: {
+    null
+  },
+}
